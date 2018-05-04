@@ -22,17 +22,52 @@
     box-sizing: border-box;
     padding-left: 18px;
 }
+.info {
+    box-sizing: border-box;
+    height: 100px;
+    padding: 15px;
+    color: #282828;
+}
+.info .title {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.389;
+}
+.info .price {
+    float: right;
+    color: #ff7e00;
+    font-size: 20px;
+}
+.info .other {
+    margin-bottom: 4px;
+    color: #666666;
+    font-size: 12px;
+    line-height: 1.5;
+}
 .nav{
     display: flex;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ebebeb;
 }
 .nav li{
     list-style: none;
     flex: 1;
     text-align: center;
+    height: 40px;
+    line-height: 40px;
+}
+.nav li span {
+    display: inline-block;
+    box-sizing: border-box;
+    height: 40px;
+    color: #666666;
 }
 /* nav-choose */
-.nav-choose{
-    border-bottom: 1px solid #05aa72;
+.nav .nav-choose{
+    color: #333333;
+    border-bottom: 2px solid #05aa72;
 }
 .nav-process .process{
     display: flex;
