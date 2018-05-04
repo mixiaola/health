@@ -86,11 +86,13 @@
     display: inline-block;
     text-align: center;
     position: relative;
+    color: #fff;
 }
 .nav-process .process .icon p{
     position: absolute;
     left: 0;
     right: 0;
+    color: #05aa72;
 }
 .nav-process .process .line{
     display: inline-block;
@@ -122,12 +124,12 @@
 }
 .bottom-text{
     background: #eaeaea;
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
 }
 .button{
-    position: absolute;
-    bottom: 0;
-    left:0;
-    right:0;
     background: #05aa72;
     text-align: center;
     color: #fff;
