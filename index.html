@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="index.css">
+    <title></title>
+</head>
+<body>
+    <div class="slider">
+
+    </div>
+    <div class="info">
+
+    </div>
+    <ul class="nav">
+        <li><span class="nav-choose">服务详情</span></li>
+        <li><span>服务流程</span></li>
+        <li><span>服务示例</span></li>
+        <li><span>购买须知</span></li>
+    </ul>
+    <div class="content">
+        <div class="nav-detail">
+        0
+        </div>
+        <div class="nav-process" style="display:none;">
+            <div class="process">
+                <span class="icon"><i>111</i><p>11</p></span>
+                <span class="line"></span>
+                <span class="icon"><i>111</i><p>11</p></span>
+                <span class="line"></span>
+                <span class="icon"><i>111</i><p>11</p></span>
+                <span class="line"></span>
+                <span class="icon"><i>111</i><p>11</p></span>
+            </div>
+        </div>
+        <div class="nav-case"  style="display:none;">
+            <div class="case-list">
+                <span class="case-icon">
+                    <i class="case-i"></i><i class="case-line"></i>
+                </span>
+                <span>
+                    <p>111</p>
+                    <p>111</p>
+                </span>
+            </div>
+            <div class="case-list">
+                <span class="case-icon">
+                    <i class="case-i"></i>
+                    <i class="case-line"></i>
+                </span>
+                <span>
+                    <p>111</p>
+                    <p>111</p>
+                </span>
+            </div> 
+        </div>
+        <div class="nav-notice"  style="display:none;">
+        3
+        </div>
+    </div>
+    <div class="button">立即购买</div>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+<script>
+   $('.nav').on('click','span',function(e) {
+       var index = $("ul span").index(this);
+       for(var i of $('.content')[0].children){
+           $('.'+i.className).hide();
+       }
+       $('.'+ $('.content')[0].children[index].className).show()
+   })
+</script>
+</html>

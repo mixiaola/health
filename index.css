@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.nav{
+    display: flex;
+}
+.nav li{
+    list-style: none;
+    flex: 1;
+    text-align: center;
+}
+/* nav-choose */
+.nav-choose{
+    border: 1px solid #ddd;
+}
+.nav-process .process{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-process .process i{
+    width: 50px;
+    height: 50px;
+    background: #f0f;
+    display: inline-block;
+    border-radius: 50%;
+    line-height: 50px;
+}
+.nav-process .process .icon{
+    display: inline-block;
+    text-align: center;
+    position: relative;
+}
+.nav-process .process .icon p{
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+.nav-process .process .line{
+    display: inline-block;
+    width: 50px;
+    height: 2px;
+    background: #f0f;
+}
+/* nav-case */
+.nav-case .case-list{
+    display: flex;
+}
+.nav-case .case-icon{
+    position: relative;
+}
+.nav-case .case-i{
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 50%;
+    background: #f0f;
+    position: absolute;
+}
+.nav-case .case-line{
+    width: 2px;
+    height: 50px;
+    background: #f0f;
+    display: inline-block;
+    margin-left: 4px;
+}
+.button{
+    position: absolute;
+    bottom: 0;
+    left:0;
+    right:0;
+    background: #0f0;
+    text-align: center;
+}
