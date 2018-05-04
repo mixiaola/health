@@ -87,16 +87,17 @@
 }
 .advantage-list {
     overflow: auto;
-    height: 86px;
-    margin: 25px 0;
+    margin: 25px 0 10px 0;
 }
 .nav-detail li {
-    height: 37px;
-    line-height: 37px;
-    margin-left: 20px;
     float: left;
     list-style: none;
-    margin-right: 40px;
+    width: 50%;
+    padding-left: 3%;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    margin-bottom: 15px;
 }
 .nav-detail li > span {
     height: 37px;
@@ -112,19 +113,23 @@
 }
 .nav-detail .service-content img {
     width: 100%;
+    margin: 5px 0;
 }
 .nav-detail .recommend-reason .list-wrap{
     background: #f3f3f3;
     margin: 25px 20px;
-    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .recommend-reason .list-wrap > img {
     width: 45%;
     height: 100%;
-    float: left;
+    object-fit: contain;
 }
 .recommend-reason .list-wrap > div {
     padding: 22px 15px;
+    box-sizing: border-box;
 }
 .recommend-reason .list-wrap > div .reason-title {
     margin-bottom: 5px;
@@ -182,6 +187,9 @@
     border-radius: 50%;
     background: #05aa72;
     position: absolute;
+}
+.nav-case .case-t{
+    
 }
 .nav-case .case-line{
     width: 2px;
