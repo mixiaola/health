@@ -103,6 +103,7 @@
 /* nav-case */
 .nav-case .case-list{
     display: flex;
+    padding: 0 15px 35px 15px;
 }
 .nav-case .case-icon{
     position: relative;
@@ -122,12 +123,28 @@
     display: inline-block;
     margin-left: 4px;
 }
+.nav-notice{
+    padding-bottom: 40px;
+}
+.nav-notice .notice{
+    padding: 12px 18px 0 18px;
+    font-size: 12px;
+    color: #666;
+}
+.nav-notice .notice img{
+    width: 12px;
+    margin-top: 2px;
+    float: left;
+    margin-right: 5px;
+}
 .bottom-text{
     background: #eaeaea;
     width: 100%;
     text-align: center;
     height: 50px;
     line-height: 50px;
+    font-size: 12px;
+    color: #999;
 }
 .button{
     background: #05aa72;

@@ -68,8 +68,8 @@
                     <i class="case-i"></i><i class="case-line"></i>
                 </span>
                 <span>
-                    <p>111</p>
-                    <p>111</p>
+                    <p>2017年9月18日</p>
+                    <p>河北A公司为小张购买了“协医健康无忧计划”会员服务</p>
                 </span>
             </div>
             <div class="case-list">
@@ -78,30 +78,92 @@
                     <i class="case-line"></i>
                 </span>
                 <span>
-                    <p>111</p>
-                    <p>111</p>
+                    <p>2018年2月10日</p>
+                    <p>小张体检查出脑肿瘤；经当地二甲医院确诊</p>
                 </span>
             </div> 
+            <div class="case-list">
+                <span class="case-icon">
+                    <i class="case-i"></i>
+                    <i class="case-line"></i>
+                </span>
+                <span>
+                    <p>2018年2月12日</p>
+                    <p>小张通过公司的企业医生提交自己的检查报告</p>
+                </span>
+            </div>
+            <div class="case-list">
+                <span class="case-icon">
+                    <i class="case-i"></i>
+                    <i class="case-line"></i>
+                </span>
+                <span>
+                    <p>2小时后</p>
+                    <p>协医集团医疗助理接收到小张的病例报告，并转交给协和系医 生集团神经外科主任专家王主任</p>
+                </span>
+            </div>
+            <div class="case-list">
+                <span class="case-icon">
+                    <i class="case-i"></i>
+                    <i class="case-line"></i>
+                </span>
+                <span>
+                    <p>4小时后</p>
+                    <p>医疗助理接通了小张、王主任的电话，王主任为小张做了远程 会诊咨询；王主任针对小张的病情，进行了病情分析，就医指 导和治疗方案选择的推荐</p>
+                </span>
+            </div>
+            <div class="case-list">
+                <span class="case-icon">
+                    <i class="case-i"></i>
+                    <i class="case-line"></i>
+                </span>
+                <span>
+                    <p>根据小张的病情，医互保为小张启动就医绿色通道，在三日后抵京 看病</p>
+                </span>
+            </div>
+            <div class="case-list">
+                <span class="case-icon">
+                    <i class="case-i"></i>
+                    <i class="case-line"></i>
+                </span>
+                <span>
+                    <p>小张于治疗后回家进行康复修养</p>
+                </span>
+            </div>
         </div>
         <div class="nav-notice"  style="display:none;">
-        3
+            <div class="link">医护保健康保障计划公约</div>
+            <div class="notice">
+                <img src="img/buy-list.png" alt="">
+                 本服务计划为企业客户及其家属服务，个人购买服务无效。
+            </div>
+            <div class="notice">
+                <img src="img/buy-list.png" alt=""> 
+                本服务计划定位于帮助企业员工、家属或客户找到更好、更 合适的医疗解决方案，所以该服务仅限于不幸罹患计划规定 疾病的企业员工或客户使用（即过了等待期，有初次确诊疾 病的诊断结果），平时申请无效。 
+            </div>
+            <div class="notice">
+                <img src="img/buy-list.png" alt="">
+                本服务计划等待期为3个月，即从购买日期开始三个月之后才 能使用；有效期一年（含三个月独立等待期），自购买该服 务后一年内申请时有效；本服务一年有效期内仅限使用一次。
+            </div>
+            <div class="notice">
+                <img src="img/buy-list.png" alt="">
+                支持全国企业客户购买该增值服务，通过互联网为您对接协 医集团专家，给自己及家人更好的选择。
+            </div>
+            <div class="notice">
+                <img src="img/buy-list.png" alt=""> 
+                本服务购买一份仅对应服务一个会员，如需服务覆盖更多家 人，需根据覆盖的人数购买多份。
+            </div>
+
         </div>
     </div>
     <div class="bottom-text">权威医生守护健康 成就美好医疗</div>
     <div class="button">立即购买</div>
 </body>
-<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
 <script>
    $('.nav').on('click','span',function(e) {
-       // var index = $("ul span").index(this);
-       // for(var i of $('.content')[0].children){
-       //     $('.'+i.className).hide();
-       // }
-       // $('.'+ $('.content')[0].children[index].className).show()
        var index = $(this).parent().index();
        $(this).addClass('nav-choose').parent().siblings().find('span').removeClass('nav-choose');
-       console.log(index)
        $('.content > div').hide().eq(index).show();
    })
 </script>
