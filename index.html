@@ -16,6 +16,7 @@
     </div>
     <div class="info">
         <p class="title">协医健康无忧计划</p>
+        <span class="price">¥19.9</span>
         <p class="other">服务人群：企业内0-60周岁的健康人群及其家属 </p>
         <p class="other">保障期限：1年</p>
     </div>
@@ -28,7 +29,15 @@
     </ul>
     <div class="content">
         <div class="nav-detail">
-        0
+            <div class="advantage">
+                <p class="advantage-title">服务亮点</p>
+                <ul class="advantage-list">
+                    <li><span class="advantage-icon"></span>覆盖34种重疾</li>
+                    <li><span class="advantage-icon"></span>专家1对1咨询</li>
+                    <li><span class="advantage-icon"></span>48小时响应</li>
+                    <li><span class="advantage-icon"></span>绿色通道</li>
+                </ul>
+            </div>
         </div>
         <div class="nav-process" style="display:none;">
             <div class="process">
@@ -73,11 +82,15 @@
     crossorigin="anonymous"></script>
 <script>
    $('.nav').on('click','span',function(e) {
-       var index = $("ul span").index(this);
-       for(var i of $('.content')[0].children){
-           $('.'+i.className).hide();
-       }
-       $('.'+ $('.content')[0].children[index].className).show()
+       // var index = $("ul span").index(this);
+       // for(var i of $('.content')[0].children){
+       //     $('.'+i.className).hide();
+       // }
+       // $('.'+ $('.content')[0].children[index].className).show()
+       var index = $(this).parent().index();
+       $(this).addClass('nav-choose').parent().siblings().find('span').removeClass('nav-choose');
+       console.log(index)
+       $('.content > div').hide().eq(index).show();
    })
 </script>
 </html>
