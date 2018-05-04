@@ -42,7 +42,7 @@
 .nav-process .process i{
     width: 50px;
     height: 50px;
-    background: #f0f;
+    background: #05aa72;
     display: inline-block;
     border-radius: 50%;
     line-height: 50px;
@@ -61,7 +61,7 @@
     display: inline-block;
     width: 50px;
     height: 2px;
-    background: #f0f;
+    background: #05aa72;
 }
 /* nav-case */
 .nav-case .case-list{
@@ -75,21 +75,27 @@
     height: 10px;
     display: inline-block;
     border-radius: 50%;
-    background: #f0f;
+    background: #05aa72;
     position: absolute;
 }
 .nav-case .case-line{
     width: 2px;
     height: 50px;
-    background: #f0f;
+    background: #05aa72;
     display: inline-block;
     margin-left: 4px;
+}
+.bottom-text{
+    background: #eaeaea;
 }
 .button{
     position: absolute;
     bottom: 0;
     left:0;
     right:0;
-    background: #0f0;
+    background: #05aa72;
     text-align: center;
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
 }
