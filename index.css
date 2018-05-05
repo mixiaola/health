@@ -121,6 +121,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 4px;
 }
 .recommend-reason .list-wrap > img {
     width: 45%;
@@ -222,6 +223,10 @@
 }
 .nav-case .case-list span p:last-child{
     color :#666;
+}
+.nav-case .case-list:nth-last-of-type(1) span p,
+.nav-case .case-list:nth-last-of-type(2) span p {
+    color: #333;
 }
 .nav-case .case-icon{
     position: relative;
