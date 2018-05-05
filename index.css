@@ -148,21 +148,35 @@
     margin-top: 10px;
 }
 .nav-process .process span{
-    width: 25px;
-    height: 25px;
-    background: #05aa72;
-    display: inline-block;
-    border-radius: 50%;
-    line-height: 25px;
+   text-align: center;
 }
 .nav-process .process .icon{
     display: inline-block;
     text-align: center;
     position: relative;
     color: #fff;
+     width: 25px;
+    height: 25px;
+    background: #05aa72;
+    display: inline-block;
+    border-radius: 50%;
+    line-height: 25px;
 }
 .nav-process .process-text {
     overflow: auto;
+}
+.nav-process .process span p{
+    color: #05aa72;
+    font-size: 12px;
+    white-space: nowrap;
+}
+.nav-process .process div{
+    text-align: center;
+    position: relative; 
+    margin-left: 35px;   
+}
+.nav-process .process div:first-child{
+    margin-left: 0;
 }
 .nav-process .process-text p{
     color: #05aa72;
@@ -171,6 +185,7 @@
     float: left;
     text-align: center;
     margin-top: 15px;
+    white-space: nowrap;
 }
 .nav-process .process .line{
     display: inline-block;
@@ -178,6 +193,10 @@
     height: 2px;
     background: #05aa72;
     margin: 0 4px;
+    border-radius: 2px;
+    position: absolute;
+    left: 36px;
+    top: 13px;
 }
 .nav-process .process-content {
     margin: 40px 20px 40px;
