@@ -73,7 +73,7 @@ a{
 /* nav-choose */
 .nav .nav-choose{
     color: #333333;
-    border-bottom: 2px solid #05aa72;
+    border-bottom: 2px solid #2a8cff;
 }
 /* nav-detail */
 .content .nav-title {
@@ -89,7 +89,7 @@ a{
     top: 3px;
     width: 4px;
     height: 17px;
-    background-color: #05aa72;
+    background-color: #2a8cff;
 }
 .advantage-list {
     overflow: auto;
@@ -118,10 +118,58 @@ a{
     width: 100%;
 }
 .nav-detail .service-content img {
-    width: 100%;
-    margin: 5px 0;
+    width: 75%;
+    margin: 5px auto;
+    display: block;
+}
+.nav-detail .service-content .content-line {
+    height: 1px;
+    background: #e6e6e6;
+    margin: 20px auto;
+    width: 92%;
+}
+.nav-detail .disease-type {
+    margin: 20px 0 50px;
+    padding: 0 20px;
+}
+.nav-detail .disease-type p {
+    margin-bottom: 22px;
+    font-size: 16px;
+    color: #333333;
+}
+.nav-detail .disease-type .disease-list li{
+    float: none;
+    position: relative;
+    font-size: 14px;
+}
+.nav-detail .disease-type .case-i {
+    width: 5px;
+    height: 5px;
+    display: inline-block;
+    border-radius: 50%;
+    background: #2a8cff;
+    position: absolute;
+    left: 0;
+}
+.nav-detail .disease-type .disease-more {
+    float: right;
+    font-size: 12px;
+    color: #2a8cff;
+}
+.nav-detail .disease-more span {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 6px;
+}
+
+.nav-detail .disease-type .disease-more img {
+    width: 6px;
+    height: 11px;
+    margin: 0;
 }
 .nav-detail .recommend-reason .list-wrap{
+    height: 120px;
+    padding: 23px 15px;
     background: #f3f3f3;
     margin: 25px 20px;
     display: flex;
@@ -135,12 +183,12 @@ a{
     object-fit: contain;
 }
 .recommend-reason .list-wrap > div {
-    padding: 22px 15px;
+    padding-left: 15px;
     box-sizing: border-box;
 }
 .recommend-reason .list-wrap > div .reason-title {
     margin-bottom: 5px;
-    color: #05aa72;
+    color: #2a8cff;
     font-size: 16px;
     font-weight: bold;
 }
@@ -159,21 +207,23 @@ a{
 }
 .nav-process .process .icon{
     display: inline-block;
+    margin-bottom: 10px;
     text-align: center;
     position: relative;
     color: #fff;
-     width: 25px;
+    width: 25px;
     height: 25px;
-    background: #05aa72;
+    background: #2a8cff;
     display: inline-block;
     border-radius: 50%;
     line-height: 25px;
+    font-size: 12px;
 }
 .nav-process .process-text {
     overflow: auto;
 }
 .nav-process .process span p{
-    color: #05aa72;
+    color: #2a8cff;
     font-size: 12px;
     white-space: nowrap;
 }
@@ -198,7 +248,7 @@ a{
     display: inline-block;
     width: 50px;
     height: 2px;
-    background: #05aa72;
+    background: #298dfb;
     margin: 0 4px;
     border-radius: 2px;
     position: absolute;
@@ -243,7 +293,7 @@ a{
     height: 10px;
     display: inline-block;
     border-radius: 50%;
-    background: #05aa72;
+    background: #2a8cff;
     position: absolute;
     top: 4px;
 }
@@ -251,17 +301,17 @@ a{
     width: 0; 
     height: 0; 
     border-top: 5px solid transparent; 
-    border-left: 10px solid #05aa72; 
+    border-left: 7px solid #2a8cff; 
     border-bottom: 5px solid transparent; 
     display: inline-block;
     position: absolute;
     left: 4px;
-    top: 4px;
+    top: 1px;
 }
 .nav-case .case-line{
     width: 2px;
     height: 50px;
-    background: #05aa72;
+    background: #2a8cff;
     display: inline-block;
     margin-left: 4px;
     margin-top: 18px;
@@ -273,7 +323,7 @@ a{
     width: 230px;
     margin: 0 auto 25px;
     background: #f0faf7;
-    color: #05aa72;
+    color: #2a8cff;
     padding: 10px 0;
     box-sizing: border-box;
     font-size: 13px;
@@ -309,9 +359,49 @@ a{
     color: #999;
 }
 .button{
-    background: #05aa72;
+    background: #2a8cff;
     text-align: center;
     color: #fff;
     height: 50px;
     line-height: 50px;
+}
+.mark-warp {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #a4a4a6;
+    overflow: hidden;
+    z-index: 999;
+    opacity: 0.4;
+}
+.disease-more-list {
+    display: none;
+    position: fixed;
+    width: 85%;
+    height: 360px;
+    top: 100px;
+    left: 40px;
+    background: #fff;
+    z-index: 1000;
+    border-radius: 10px;
+}
+.disease-more-list .disease-more-title {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333333;
+    text-align: center;
+}
+.disease-more-list ul {
+    padding: 13px 10px;
+}
+.disease-more-list ul li{
+    -webkit-text-size-adjust: none;
+    list-style: none;
+    font-size: 10px;
+    color: #999999;
+    float: left;
+    width: calc(100% / 2);
 }
